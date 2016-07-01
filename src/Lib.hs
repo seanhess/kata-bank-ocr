@@ -97,6 +97,7 @@ showAccFlag acc
 
 
 
+
 -- test cases and debugging ---------------------------------------
 
 digitList :: InputDigit -> [String]
@@ -191,7 +192,13 @@ testCaseErr = intercalate "\n"
   , "                           "
   ]
 
-testLines = intercalate "\n" [testCase, testCaseIll, testCaseErr]
+testCaseFour = intercalate "\n"
+  [ "    _  _     _  _  _  _  _ "
+  , "  | _| _||_| _ |_   ||_||_|"
+  , "  ||_  _|  | _||_|  ||_| _ "
+  ]
+
+testLines = intercalate "\n" [testCase, testCaseIll, testCaseErr, testCaseFour]
 
 
 acc1 = AccountNumber 4 5 7 5 0 8 0 0 0
